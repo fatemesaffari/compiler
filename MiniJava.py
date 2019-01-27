@@ -14,7 +14,7 @@ def main():
     lexer = MiniJavaLexer(StdinStream())
     stream = CommonTokenStream(lexer)
     parser = MiniJavaParser(stream)
-    tree = parser.prog()
+    tree = parser.Goal()
     printer = HelloPrintListener()
     walker = ParseTreeWalker()
     walker.walk(printer, tree)
