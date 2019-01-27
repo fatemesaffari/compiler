@@ -8,7 +8,7 @@ class MiniJavaPrintListener(MiniJavaListener):
 
     def enter(self, ctx):
 
-        print(ctx.ID())
+        print(ctx.MainClass())
 
 def main():
     lexer = MiniJavaLexer(StdinStream())
